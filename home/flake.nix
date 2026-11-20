@@ -14,21 +14,12 @@
       url = "github:helix-editor/helix/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    scripts = {
-      url = "../scripts";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-      };
-    };
   };
 
   outputs =
     {
       home-manager,
       helix,
-      scripts,
       ...
     }:
     {
@@ -45,7 +36,6 @@
                 inherit
                   system
                   helix
-                  scripts
                   ;
               };
 

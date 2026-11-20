@@ -5,6 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
+    git-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,6 +20,7 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         flake-utils.follows = "flake-utils";
+        git-hooks.follows = "git-hooks";
       };
     };
 
@@ -23,6 +29,8 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         flake-utils.follows = "flake-utils";
+        git-hooks.follows = "git-hooks";
+        keek.follows = "keek";
       };
     };
 
@@ -38,7 +46,6 @@
         flake-utils.follows = "flake-utils";
         home-manager.follows = "home-manager";
         helix.follows = "helix";
-        scripts.follows = "scripts";
       };
     };
   };
