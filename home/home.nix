@@ -1,0 +1,51 @@
+{
+  pkgs,
+  ...
+}:
+{
+  programs.home-manager.enable = true;
+
+  home = {
+    packages = with pkgs; [
+      alsa-utils
+      bashmount
+      bat
+      bluetuith
+      bottom
+      btop
+      clinfo
+      cmus
+      corefonts
+      drawio
+      eza
+      ffmpeg_7-full
+      fselect
+      hsetroot
+      htop
+      hunspell
+      hunspellDicts.en_US
+      hunspellDicts.ru_RU
+      keepassxc
+      krita
+      libreoffice-qt
+      librewolf
+      lm_sensors
+      nix-output-monitor
+      obs-studio
+      polkit
+      qalculate-gtk
+      qbittorrent
+      steam
+      steam-run
+      steam-tui
+      steamcmd
+      telegram-desktop
+      v2raya
+      vesktop
+      vista-fonts
+      vlc
+      wireguard-tools
+      xclip
+    ];
+  };
+}
