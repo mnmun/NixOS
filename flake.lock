@@ -136,11 +136,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795113407,
-        "narHash": "sha256-VZBXkdnZ3ToEVggKB1kX7p12L0QLtC4m7M2WL/VcYDo=",
+        "lastModified": 1795346637,
+        "narHash": "sha256-Mdv7HI9J+wcie3b5NC9obXs3kipE2k2uj+cENSfvWSc=",
         "owner": "mnmun",
         "repo": "keek",
-        "rev": "0a0b7c89a924d65051e1fa04d25b133dc012469e",
+        "rev": "748997557648269766be70d5b7f1e5f80fdfabb6",
         "type": "github"
       },
       "original": {
